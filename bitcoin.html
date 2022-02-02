@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Prediction</title>
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bg-white">
+
+    <div class="row">
+        <div class="bg-white"  style="width:100%; height:100%; margin-top:50 px">
+            <div class="container">
+               <div class="text-light">
+                   <div class="card" style="text-align:center">
+                       <div style="background-image: url('https://cdn.pixabay.com/photo/2021/09/06/12/40/cryptocurrency-6601591_960_720.jpg');">
+                           <h1>Bitcoin Price Prediction</h1>
+                       </div>
+                   </div>
+
+    <div style="background-image: url('https://cdn.pixabay.com/photo/2021/09/06/12/40/cryptocurrency-6601591_960_720.jpg');">
+        <form action="\predict" method="post">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Open</h5>
+                            <input type="text" class="form-control" id="Open" name="Open" placeholder="Enter Open Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">High</h5>
+                            <input type="text" class="form-control" id="High" name="High" placeholder="Enter High Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Low</h5>
+                            <input type="text" class="form-control" id="Low" name="Low" placeholder="Enter Low Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Close</h5>
+                            <input type="text" class="form-control" id="Close" name="Close" placeholder="Enter Close Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Volume_BTC</h5>
+                            <input type="text" class="form-control" id="Volume_BTC" name="Volume_BTC" placeholder="Enter Volume_BTC Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Volume_Currency</h5>
+                            <input type="text" class="form-control" id="Volume_Currency" name="Volume_Currency" placeholder="Enter Volume_Currency Value">
+                        </div>
+                    </div>
+                </div>
+            <br>
+
+            <br>
+            </div>
+
+            <!-- Submit -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="col-12" style="text-align:center">
+                            <h5 class="card-title">Timestamp</h5>
+                            <!-- Timestamp -->
+                            <input type="date" name="Timestamp" id="Timestamp" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-12" style="text-align:center">
+                    <input type="submit" value="Submit" class="btn btn-success">
+                </div>
+            </div>
+        <br>
+            <div class="row">
+                <div class="col-12" style="text-align:center">
+                    <div class="text-light">
+                        <h3>{{ prediction_text }}</h3>
+                    </div>
+                </div>
+            </div>
+        <br>
+            <div class="row">
+                <div class="col-12" style="text-align:center">
+                    <p><center>©2022 Amritha Viswanathan</center>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
